@@ -18,9 +18,10 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 .brand{font-weight:700;letter-spacing:.12em;font-size:.95rem}
 .nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
 .nav .links{display:flex;gap:1.25rem}
-.nav [aria-current]{opacity:.55}
-.nav .lang{opacity:.85}
-.nav .lang a,.nav .lang span{padding:0 .1em}
+.nav .links [aria-current]{opacity:.55}
+.nav .lang strong{font-weight:700}
+.nav .lang a{opacity:.6;text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:1px}
+.nav .lang a:hover{opacity:1}
 
 .footer{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding:1.25rem 1.5rem;font-size:.75rem;letter-spacing:.04em;opacity:.7}
 .footer a:hover{opacity:1}
@@ -49,17 +50,26 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 }
 @media (prefers-reduced-motion:reduce){.home .bg{display:none}.home{background:#000 url(/media/poster.jpg) center/cover}}
 
+/* Contact form */
+.contact{display:grid;gap:1rem;margin:1.5rem 0}
+.contact label{display:grid;gap:.35rem;font-size:.9rem;font-weight:600}
+.contact input,.contact textarea{font:inherit;font-weight:400;padding:.65rem .75rem;border:1px solid #ccc;border-radius:6px;background:#fff;color:#111}
+.contact input:focus,.contact textarea:focus{outline:2px solid #111;outline-offset:1px;border-color:#111}
+.contact button{justify-self:start;font:inherit;font-weight:600;padding:.7rem 1.4rem;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+.contact button:hover{background:#333}
+.small{font-size:.85rem;color:#555}
+
 </style>
 
 </head>
 <body class="page">
-<header class="top"><a class="brand" href="/">101214</a><nav class="nav"><span class="links"><a href="/" >Home</a><a href="/privacy-statement.html" aria-current=page>Privacy</a></span></nav></header>
+<header class="top"><a class="brand" href="/">101214</a><nav class="nav"><span class="links"><a href="/" >Home</a></span></nav></header>
 <main class="prose">
 <h1>Privacyverklaring</h1>
-<p>101214 BV, gevestigd aan Torenallee 20, 5617 BC Eindhoven, is verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze privacyverklaring. Vragen over privacy kunt u sturen naar <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>.</p>
+<p>101214 BV, gevestigd aan Torenallee 20, 5617 BC Eindhoven, is verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze privacyverklaring. Vragen over privacy kunt u stellen via <a href="/contact.html">het contactformulier</a>.</p>
 
 <h2>Deze website</h2>
-<p>Deze website is een statische informatiepagina. Er worden geen cookies geplaatst, er wordt geen bezoekersgedrag gevolgd en er worden geen gegevens gedeeld met advertentie- of analysediensten. De hostingprovider kan om technische en beveiligingsredenen tijdelijk serverlogs bewaren (zoals IP-adres, tijdstip en opgevraagde pagina); 101214 BV gebruikt deze gegevens niet voor andere doeleinden.</p>
+<p>Deze website is een statische informatiepagina. Er worden geen cookies geplaatst, er wordt geen bezoekersgedrag gevolgd en er worden geen gegevens gedeeld met advertentie- of analysediensten. De hostingprovider kan om technische en beveiligingsredenen tijdelijk serverlogs bewaren (zoals IP-adres, tijdstip en opgevraagde pagina); 101214 BV gebruikt deze gegevens niet voor andere doeleinden. Berichten via het contactformulier worden verwerkt door Formspree (Formspree Inc., VS) en per e-mail aan ons doorgestuurd; het formulier is beveiligd tegen spam met reCAPTCHA (Google).</p>
 
 <h2>Persoonsgegevens die wij verwerken</h2>
 <p>101214 BV verwerkt uitsluitend persoonsgegevens die u zelf aan ons verstrekt, bijvoorbeeld door contact met ons op te nemen of doordat u gebruik maakt van onze diensten. Dit betreft doorgaans uw naam, e-mailadres, telefoonnummer, adresgegevens en de inhoud van onze correspondentie.</p>
@@ -74,11 +84,11 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 <p>101214 BV verkoopt uw gegevens niet aan derden en verstrekt deze uitsluitend indien dit nodig is voor de uitvoering van onze overeenkomst met u of om te voldoen aan een wettelijke verplichting. Met partijen die in onze opdracht gegevens verwerken sluiten wij een verwerkersovereenkomst.</p>
 
 <h2>Uw rechten</h2>
-<p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen, uw toestemming in te trekken, bezwaar te maken tegen de verwerking en uw gegevens over te dragen. Een verzoek kunt u sturen naar <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>. Wij reageren zo snel mogelijk, uiterlijk binnen vier weken. U kunt ook een klacht indienen bij de <a href="https://autoriteitpersoonsgegevens.nl/" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+<p>U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen, uw toestemming in te trekken, bezwaar te maken tegen de verwerking en uw gegevens over te dragen. Een verzoek kunt u indienen via <a href="/contact.html">het contactformulier</a>. Wij reageren zo snel mogelijk, uiterlijk binnen vier weken. U kunt ook een klacht indienen bij de <a href="https://autoriteitpersoonsgegevens.nl/" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
 
 <h2>Beveiliging</h2>
-<p>101214 BV neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Heeft u de indruk dat uw gegevens niet goed beveiligd zijn of zijn er aanwijzingen van misbruik, neem dan contact op via <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>.</p>
+<p>101214 BV neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Heeft u de indruk dat uw gegevens niet goed beveiligd zijn of zijn er aanwijzingen van misbruik, neem dan contact op via <a href="/contact.html">het contactformulier</a>.</p>
 </main>
-<footer class="footer"><span>&copy; 101214 BV</span><a href="/privacy-statement.html">Privacy</a><a href="mailto:ks5515@pm.me">ks5515@pm.me</a></footer>
+<footer class="footer"><span>&copy; 101214 BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>404</title>
+<title>Contact – 101214</title>
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
@@ -62,5 +62,23 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 </style>
 
 </head>
-<body class="page"><header class="top"><a class="brand" href="/">101214</a><nav class="nav"><span class="links"><a href="/" >Home</a></span></nav></header>
-<main class="prose"><h1>404</h1><p><a href="/">Home</a></p></main><footer class="footer"><span>&copy; 101214 BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer></body></html>
+<body class="page">
+<header class="top"><a class="brand" href="/">101214</a><nav class="nav"><span class="links"><a href="/" >Home</a></span></nav></header>
+<main class="prose">
+<h1>Contact</h1>
+<p>Stuur ons een bericht via dit formulier. We reageren zo snel mogelijk.</p>
+<form class="contact" action="https://formspree.io/f/mnpqvrjj" method="POST">
+  <input type="hidden" name="_subject" value="Contact via www.101214.nl">
+  <input type="hidden" name="_language" value="nl">
+  <input type="hidden" name="_next" value="https://www.101214.nl/bedankt.html">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <label>Naam<input type="text" name="name" required autocomplete="name"></label>
+  <label>E-mailadres<input type="email" name="email" required autocomplete="email"></label>
+  <label>Bericht<textarea name="message" rows="6" required></textarea></label>
+  <button type="submit">Versturen</button>
+</form>
+<p class="small">Dit formulier wordt beschermd tegen spam. Uw gegevens worden alleen gebruikt om uw bericht te beantwoorden.</p>
+</main>
+<footer class="footer"><span>&copy; 101214 BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer>
+</body>
+</html>
